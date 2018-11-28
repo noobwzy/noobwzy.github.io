@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>wzy&#39;s blog</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-11-28T05:42:23.857Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>wzy</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2018/11/26/2018%E5%B9%B411%E6%9C%8826%E6%97%A5/"/>
+    <id>http://yoursite.com/2018/11/26/2018年11月26日/</id>
+    <published>2018-11-26T12:56:41.779Z</published>
+    <updated>2018-11-28T05:42:23.857Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="2018年11月26日"><a href="#2018年11月26日" class="headerlink" title="2018年11月26日"></a>2018年11月26日</h1><p>标签（空格分隔）： Java学习</p><hr><p>java中两个关键字的使用：</p><h1 id="this"><a href="#this" class="headerlink" title="this:"></a>this:</h1><ol><li>在类的方法定义中使用的 this 关键字代表使用该方法的对象的引用。</li><li>当必须指出当前使用方法对象是谁时要使用this。</li><li>有时使用this可以处理方法中成员变量和参数重名的情况。</li><li>this可以看作是一个变量，他的值是当前对象的引用。<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">testThis</span></span>&#123;</span><br><span class="line"><span class="keyword">int</span> i = <span class="number">0</span>;</span><br><span class="line">testThis(<span class="keyword">int</span> i)&#123;</span><br><span class="line"><span class="keyword">this</span>.i = i;</span><br><span class="line">&#125;<span class="comment">//当你确定不了一个参数指定的是哪个变量的时候，找距离最近得声明，就近声明原则。</span></span><br><span class="line"><span class="function">testThis <span class="title">increamen</span><span class="params">()</span></span>&#123;</span><br><span class="line">i++;</span><br><span class="line"><span class="keyword">return</span> <span class="keyword">this</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>&#123;</span><br><span class="line">System.out.println(<span class="string">"i = "</span>+i);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">testThis leaf = <span class="keyword">new</span> testThis(<span class="number">100</span>);</span><br><span class="line">leaf.increamen().increamen().print();</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol><h2 id="你在对哪个对象来调用this时this指的就是那个对象，this是一个引用，它指向自身的对象。"><a href="#你在对哪个对象来调用this时this指的就是那个对象，this是一个引用，它指向自身的对象。" class="headerlink" title="你在对哪个对象来调用this时this指的就是那个对象，this是一个引用，它指向自身的对象。"></a>你在对哪个对象来调用this时this指的就是那个对象，this是一个引用，它指向自身的对象。</h2><h1 id="static："><a href="#static：" class="headerlink" title="static："></a>static：</h1><ol><li>在类中，用static声明的成员变量为静态成员变量，它为该类的功用变量，在第一次使用时被初始化，对于该类的所有对象来说，static的成员变量只有一份。</li><li>用static声明的方法为静态方法，在调用该方法是，不会将对象的引用传递给它，所以在static方法中不可访问非static成员。（静态方法不再是针对于某个对象的调用，所以不能访问非静态成员）。</li><li>可以通过对象引用或类名（不需要实例化）访问静态成员。<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Cat</span></span>&#123;</span><br><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">int</span> sid = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">private</span> String name;</span><br><span class="line"><span class="keyword">int</span> id;</span><br><span class="line">Cat(String name)&#123;</span><br><span class="line"><span class="keyword">this</span>.name = name;</span><br><span class="line">id = sid++;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">info</span><span class="params">()</span></span>&#123;</span><br><span class="line">System.out.println(<span class="string">"My name is "</span>+name+<span class="string">" No."</span>+id);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">Cat.sid = <span class="number">0</span>;</span><br><span class="line">Cat mimi = <span class="keyword">new</span> Cat(<span class="string">"mimi"</span>);</span><br><span class="line">Cat pipi = <span class="keyword">new</span> Cat(<span class="string">"pipi"</span>);</span><br><span class="line">mimi.info();</span><br><span class="line">pipi.info();</span><br><span class="line"><span class="comment">//在静态的方法中不需要new一个对象出来就可以运行，所以不可调用非静态变量。</span></span><br><span class="line"><span class="comment">//所以在成员变量前面加static就可以被调用。</span></span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol><h2 id="动态的方法针对某一个对象来调用，而静态的方法不针对某一个对象可直接调用，例如：xxx-（一个静态的方法）不需要写入一个对象的名字即可调用。"><a href="#动态的方法针对某一个对象来调用，而静态的方法不针对某一个对象可直接调用，例如：xxx-（一个静态的方法）不需要写入一个对象的名字即可调用。" class="headerlink" title="动态的方法针对某一个对象来调用，而静态的方法不针对某一个对象可直接调用，例如：xxx.（一个静态的方法）不需要写入一个对象的名字即可调用。"></a>动态的方法针对某一个对象来调用，而静态的方法不针对某一个对象可直接调用，例如：xxx.（一个静态的方法）不需要写入一个对象的名字即可调用。</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;2018年11月26日&quot;&gt;&lt;a href=&quot;#2018年11月26日&quot; class=&quot;headerlink&quot; title=&quot;2018年11月26日&quot;&gt;&lt;/a&gt;2018年11月26日&lt;/h1&gt;&lt;p&gt;标签（空格分隔）： Java学习&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;java中
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2018/11/25/no1/"/>
+    <id>http://yoursite.com/2018/11/25/no1/</id>
+    <published>2018-11-25T15:06:07.917Z</published>
+    <updated>2018-11-25T15:30:06.455Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Test-to-write-blog"><a href="#Test-to-write-blog" class="headerlink" title="Test to write blog"></a>Test to write blog</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Continue</span></span>&#123;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line"><span class="keyword">int</span> z = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> f = <span class="number">5</span>;</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>;i&lt;<span class="number">100</span>;i++)&#123;</span><br><span class="line"><span class="keyword">if</span>(i % f == <span class="number">0</span>)&#123;</span><br><span class="line">z++;</span><br><span class="line">System.out.println(i);</span><br><span class="line"><span class="keyword">continue</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">if</span>(z == f)&#123;</span><br><span class="line"><span class="keyword">break</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Test-to-write-blog&quot;&gt;&lt;a href=&quot;#Test-to-write-blog&quot; class=&quot;headerlink&quot; title=&quot;Test to write blog&quot;&gt;&lt;/a&gt;Test to write blog&lt;/h1&gt;&lt;figure c
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/11/25/hello-world/"/>
+    <id>http://yoursite.com/2018/11/25/hello-world/</id>
+    <published>2018-11-25T14:31:36.481Z</published>
+    <updated>2018-11-25T14:31:36.481Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
