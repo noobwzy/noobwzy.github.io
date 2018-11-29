@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-11-29T07:31:58.317Z</updated>
+  <updated>2018-11-29T07:35:25.808Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,21 +17,21 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>Java学习</title>
     <link href="http://yoursite.com/2018/11/29/2018%E5%B9%B411%E6%9C%8829%E6%97%A5/"/>
     <id>http://yoursite.com/2018/11/29/2018年11月29日/</id>
     <published>2018-11-29T07:31:27.300Z</published>
-    <updated>2018-11-29T07:31:58.317Z</updated>
+    <updated>2018-11-29T07:35:25.808Z</updated>
     
-    <content type="html"><![CDATA[<hr><p>title：Java<br>date：2018年11月29日14:03:28</p><h2 id="tags："><a href="#tags：" class="headerlink" title="tags："></a>tags：</h2><h5 id="2018年11月26日"><a href="#2018年11月26日" class="headerlink" title="2018年11月26日"></a>2018年11月26日</h5><p>标签：Java学习</p><hr><p>java中两个关键字的使用：</p><h1 id="package"><a href="#package" class="headerlink" title="package"></a>package</h1><p>1 package用于存放类，必须写在源代码第一行，包可加很多层例如package com这是一层，package com.baidu这是两层，代表首先包了baidu，然后包了com。（约定俗成，包的起名用你所在公司的域名）<br>2 编译出来的类（class文件）必须位于正确的目录下面，例如 package com.baidu.wzy，里面封装的类一定要存放在，com文件夹→baidu→wzy文件夹中。<br>3 如果要在另一个类中调用package com.baidu.wzy中的类，必须要把名字写全了。例：com.baidu.wzy.cat c = new com.baidu.wzy.cat（）；</p><h1 id="import"><a href="#import" class="headerlink" title="import"></a>import</h1><p>1 引入语句，在类的第一行中输入 inport com.baidu.wzy.cat，即可在此类中直接输入 cat c = new cat（），<br>因为在此类中已经引入了 com.baidu.wzy.cat这个类，所以不用在全部打出（如果输入inport com.baidu.wzy.*，则代表引入文件夹（也就是包中）中所有类）。<br>2 引入是源代码文件可能产生影响（.java文件），可以将该文件删除，或者转移至其他目录下。</p><h1 id="访问同一个包下面的类，不需要引入。在执行类时，也要把包名写全，如javac-com-baidu-wzy-cat-java。"><a href="#访问同一个包下面的类，不需要引入。在执行类时，也要把包名写全，如javac-com-baidu-wzy-cat-java。" class="headerlink" title="访问同一个包下面的类，不需要引入。在执行类时，也要把包名写全，如javac com.baidu.wzy.cat.java。"></a>访问同一个包下面的类，不需要引入。在执行类时，也要把包名写全，如javac com.baidu.wzy.cat.java。</h1><p><strong>执行类时如找不到，不符时，检查classprth</strong></p>]]></content>
+    <content type="html"><![CDATA[<h5 id="2018年11月29日"><a href="#2018年11月29日" class="headerlink" title="2018年11月29日"></a>2018年11月29日</h5><p>标签：Java学习</p><hr><p>java中两个关键字的使用：</p><h1 id="package"><a href="#package" class="headerlink" title="package"></a>package</h1><p>1 package用于存放类，必须写在源代码第一行，包可加很多层例如package com这是一层，package com.baidu这是两层，代表首先包了baidu，然后包了com。（约定俗成，包的起名用你所在公司的域名）<br>2 编译出来的类（class文件）必须位于正确的目录下面，例如 package com.baidu.wzy，里面封装的类一定要存放在，com文件夹→baidu→wzy文件夹中。<br>3 如果要在另一个类中调用package com.baidu.wzy中的类，必须要把名字写全了。例：com.baidu.wzy.cat c = new com.baidu.wzy.cat（）；</p><h1 id="import"><a href="#import" class="headerlink" title="import"></a>import</h1><p>1 引入语句，在类的第一行中输入 inport com.baidu.wzy.cat，即可在此类中直接输入 cat c = new cat（），<br>因为在此类中已经引入了 com.baidu.wzy.cat这个类，所以不用在全部打出（如果输入inport com.baidu.wzy.*，则代表引入文件夹（也就是包中）中所有类）。<br>2 引入是源代码文件可能产生影响（.java文件），可以将该文件删除，或者转移至其他目录下。</p><h1 id="访问同一个包下面的类，不需要引入。在执行类时，也要把包名写全，如javac-com-baidu-wzy-cat-java。"><a href="#访问同一个包下面的类，不需要引入。在执行类时，也要把包名写全，如javac-com-baidu-wzy-cat-java。" class="headerlink" title="访问同一个包下面的类，不需要引入。在执行类时，也要把包名写全，如javac com.baidu.wzy.cat.java。"></a>访问同一个包下面的类，不需要引入。在执行类时，也要把包名写全，如javac com.baidu.wzy.cat.java。</h1><p><strong>执行类时如找不到，不符时，检查classprth</strong></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;hr&gt;
-&lt;p&gt;title：Java&lt;br&gt;date：2018年11月29日14:03:28&lt;/p&gt;
-&lt;h2 id=&quot;tags：&quot;&gt;&lt;a href=&quot;#tags：&quot; class=&quot;headerlink&quot; title=&quot;tags：&quot;&gt;&lt;/a&gt;tags：&lt;/h2&gt;&lt;h5 id=&quot;20
+        &lt;h5 id=&quot;2018年11月29日&quot;&gt;&lt;a href=&quot;#2018年11月29日&quot; class=&quot;headerlink&quot; title=&quot;2018年11月29日&quot;&gt;&lt;/a&gt;2018年11月29日&lt;/h5&gt;&lt;p&gt;标签：Java学习&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;java中两个关键字的使
       
     
     </summary>
