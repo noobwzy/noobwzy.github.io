@@ -81,19 +81,19 @@
 
 
 
-<meta name="description" content="2018年12月4日标签：Java学习  Java中的权限修饰符用于修饰类中的成员变量或修饰类。123public class Cat&amp;#123;    private String name;&amp;#125; #private:修饰成员变量name，代表此成员变量只能在Cat这个类中进行访问，在子类中能被继承，但无法进行访问。1234class Cat&amp;#123;    private int Ag">
+<meta name="description" content="2018年12月4日标签：Java学习  Java中的权限修饰符用于修饰类中的成员变量或修饰类。123public class Cat&amp;#123;    private String name;&amp;#125;">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java学习">
 <meta property="og:url" content="http://yoursite.com/2018/12/04/2018年12月4日/index.html">
 <meta property="og:site_name" content="wzy&#39;s blog">
-<meta property="og:description" content="2018年12月4日标签：Java学习  Java中的权限修饰符用于修饰类中的成员变量或修饰类。123public class Cat&amp;#123;    private String name;&amp;#125; #private:修饰成员变量name，代表此成员变量只能在Cat这个类中进行访问，在子类中能被继承，但无法进行访问。1234class Cat&amp;#123;    private int Ag">
+<meta property="og:description" content="2018年12月4日标签：Java学习  Java中的权限修饰符用于修饰类中的成员变量或修饰类。123public class Cat&amp;#123;    private String name;&amp;#125;">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543916002066&di=ec9ec28d648ddcd913bbe8d6d00a13f5&imgtype=0&src=http://pic002.cnblogs.com/images/2011/99057/2011101016262680.jpg">
-<meta property="og:updated_time" content="2018-12-04T06:54:15.332Z">
+<meta property="og:updated_time" content="2018-12-11T06:38:37.434Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java学习">
-<meta name="twitter:description" content="2018年12月4日标签：Java学习  Java中的权限修饰符用于修饰类中的成员变量或修饰类。123public class Cat&amp;#123;    private String name;&amp;#125; #private:修饰成员变量name，代表此成员变量只能在Cat这个类中进行访问，在子类中能被继承，但无法进行访问。1234class Cat&amp;#123;    private int Ag">
+<meta name="twitter:description" content="2018年12月4日标签：Java学习  Java中的权限修饰符用于修饰类中的成员变量或修饰类。123public class Cat&amp;#123;    private String name;&amp;#125;">
 <meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543916002066&di=ec9ec28d648ddcd913bbe8d6d00a13f5&imgtype=0&src=http://pic002.cnblogs.com/images/2011/99057/2011101016262680.jpg">
 
 
@@ -373,10 +373,11 @@
         <h5 id="2018年12月4日"><a href="#2018年12月4日" class="headerlink" title="2018年12月4日"></a>2018年12月4日</h5><p>标签：Java学习</p>
 <hr>
 <p>Java中的权限修饰符用于修饰类中的成员变量或修饰类。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Cat</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>#private:<br>修饰成员变量name，代表此成员变量只能在Cat这个类中进行访问，在子类中能被继承，但无法进行访问。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Cat</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> Age;</span><br><span class="line">            String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>#default:<br>代表name这个成员变量，在类内部和同一个包下面的类中都可以进行访问。同时也用了default修饰了Cat这个类。<br><strong>在使用default修饰类或成员变量时不需在前面写出default</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Cat</span></span>&#123;</span><br><span class="line">    <span class="keyword">protected</span> String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>#protected:<br>修饰成员变量name，表示name可在类的内部访问，同一个包下面可以进行访问，同时在子类中也可以进行访问。</p>
-<p>#public：<br>在任何地方，都可以进行访问。<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1543916002066&amp;di=ec9ec28d648ddcd913bbe8d6d00a13f5&amp;imgtype=0&amp;src=http://pic002.cnblogs.com/images/2011/99057/2011101016262680.jpg" alt="此处输入图片的描述"></p>
+<a id="more"></a>
+<h2 id="private"><a href="#private" class="headerlink" title="private:"></a>private:</h2><p>修饰成员变量name，代表此成员变量只能在Cat这个类中进行访问，在子类中能被继承，但无法进行访问。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Cat</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> Age;</span><br><span class="line">            String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="default"><a href="#default" class="headerlink" title="default:"></a>default:</h2><p>代表name这个成员变量，在类内部和同一个包下面的类中都可以进行访问。同时也用了default修饰了Cat这个类。<br><strong>在使用default修饰类或成员变量时不需在前面写出default</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Cat</span></span>&#123;</span><br><span class="line">    <span class="keyword">protected</span> String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="protected"><a href="#protected" class="headerlink" title="protected:"></a>protected:</h2><p>修饰成员变量name，表示name可在类的内部访问，同一个包下面可以进行访问，同时在子类中也可以进行访问。</p>
+<h2 id="public："><a href="#public：" class="headerlink" title="public："></a>public：</h2><p>在任何地方，都可以进行访问。<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1543916002066&amp;di=ec9ec28d648ddcd913bbe8d6d00a13f5&amp;imgtype=0&amp;src=http://pic002.cnblogs.com/images/2011/99057/2011101016262680.jpg" alt="此处输入图片的描述"></p>
 
       
     </div>
@@ -410,6 +411,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/12/11/2018年12月11日/" rel="prev" title="Java学习（1）">
+                Java学习（1） <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -491,7 +496,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -558,7 +563,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#2018年12月4日"><span class="nav-number">1.</span> <span class="nav-text">2018年12月4日</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#2018年12月4日"><span class="nav-number">1.</span> <span class="nav-text">2018年12月4日</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#private"><span class="nav-number"></span> <span class="nav-text">private:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#default"><span class="nav-number"></span> <span class="nav-text">default:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#protected"><span class="nav-number"></span> <span class="nav-text">protected:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#public："><span class="nav-number"></span> <span class="nav-text">public：</span></a></li></div>
             
 
           </div>
