@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-11T06:38:08.538Z</updated>
+  <updated>2018-12-17T09:45:32.511Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jdk_api文档查询</title>
+    <link href="http://yoursite.com/2018/12/17/2018%E5%B9%B412%E6%9C%8817/"/>
+    <id>http://yoursite.com/2018/12/17/2018年12月17/</id>
+    <published>2018-12-17T09:30:41.370Z</published>
+    <updated>2018-12-17T09:45:32.511Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="2018年12月17日"><a href="#2018年12月17日" class="headerlink" title="2018年12月17日"></a>2018年12月17日</h5><p>标签：jdk_api文档查询</p><h2 id="jdk-api文档查询"><a href="#jdk-api文档查询" class="headerlink" title="jdk_api文档查询"></a>jdk_api文档查询</h2><a id="more"></a><ol><li>首先在输入网址 <a href="http://java.sun.com" target="_blank" rel="noopener">http://java.sun.com</a> 打开然后在Top Downloads下方点击Java SE。</li><li>然后在Downloads 中找Java SE 8 Documentation，找到后点击右侧DOWNLOAD。</li><li>找到JavaFX API Documentation，点击下面的Accept License Agreement，然后开始下载。</li><li>下载成功后解压，打开文件夹api，找到help-doc.html。打开就可以进行查询了。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;2018年12月17日&quot;&gt;&lt;a href=&quot;#2018年12月17日&quot; class=&quot;headerlink&quot; title=&quot;2018年12月17日&quot;&gt;&lt;/a&gt;2018年12月17日&lt;/h5&gt;&lt;p&gt;标签：jdk_api文档查询&lt;/p&gt;
+&lt;h2 id=&quot;jdk-api文档查询&quot;&gt;&lt;a href=&quot;#jdk-api文档查询&quot; class=&quot;headerlink&quot; title=&quot;jdk_api文档查询&quot;&gt;&lt;/a&gt;jdk_api文档查询&lt;/h2&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java学习（3）</title>
+    <link href="http://yoursite.com/2018/12/13/2018%E5%B9%B412%E6%9C%8813%E6%97%A5/"/>
+    <id>http://yoursite.com/2018/12/13/2018年12月13日/</id>
+    <published>2018-12-13T09:05:07.921Z</published>
+    <updated>2018-12-17T09:30:28.792Z</updated>
+    
+    <content type="html"><![CDATA[<h5 id="2018年12月17日"><a href="#2018年12月17日" class="headerlink" title="2018年12月17日"></a>2018年12月17日</h5><p>标签：Java学习</p><h2 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h2><a id="more"></a><p>Object类时所有Java类的根基，如果在类的声明中未使用extends关键字指明其父类，则默认父类为Object。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span></span>&#123;...&#125;</span><br><span class="line"><span class="comment">//相当于：</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Person</span> <span class="keyword">extends</span> <span class="title">Object</span></span>&#123;...&#125;</span><br></pre></td></tr></table></figure></p><p><strong>所有的类都从Object中继承</strong><br>可以在jdk_api文档中查询Object这个类中都的方法。</p><h2 id="toString方法"><a href="#toString方法" class="headerlink" title="toString方法"></a>toString方法</h2><ol><li>Objecr类中定义有public String  toString（）方法，其返回值是String类型，描述当前对象的有关信息。</li><li>在进行String与其他类型数据的连接操作时（如System.out.println（”info”））将自动调用该对象类的toString（）方法。</li><li>推荐在所有类中重写toString（）方法，重写方法时注意复制。<h2 id="equals"><a href="#equals" class="headerlink" title="equals"></a>equals</h2></li><li>Object类中定义有equals方法，public boolean equals（Object obj）方法。用来表示定义对象是否“相等”的逻辑方法。</li><li>Object的equals方法定义为:x.equals(y)当x和y是用一个对象的应用时返回true否则返回false。</li><li>J2SDK提供的一些类，如String，Date等，重写了Object的equals方法，调用这些类的equals方法，当x和y所引用的对象是同一类对象且属性内容相等时（并不一定是相同的对象），返回true否则返回false。</li><li>可根据需要在用户自定义类型中重写equals方法。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h5 id=&quot;2018年12月17日&quot;&gt;&lt;a href=&quot;#2018年12月17日&quot; class=&quot;headerlink&quot; title=&quot;2018年12月17日&quot;&gt;&lt;/a&gt;2018年12月17日&lt;/h5&gt;&lt;p&gt;标签：Java学习&lt;/p&gt;
+&lt;h2 id=&quot;Object&quot;&gt;&lt;a href=&quot;#Object&quot; class=&quot;headerlink&quot; title=&quot;Object&quot;&gt;&lt;/a&gt;Object&lt;/h2&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Java学习（1）</title>
