@@ -81,20 +81,18 @@
 
 
 
-<meta name="description" content="2018年12月4日标签：Java学习  Java中的权限修饰符用于修饰类中的成员变量或修饰类。123public class Cat&amp;#123;    private String name;&amp;#125;">
+<meta name="description" content="2018年12月19日标签：Java学习 接口">
 <meta name="keywords" content="Java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java学习（1）">
-<meta property="og:url" content="http://yoursite.com/2018/12/04/2018年12月4日/index.html">
+<meta property="og:title" content="Java学习（5）">
+<meta property="og:url" content="http://yoursite.com/2018/12/19/守家/index.html">
 <meta property="og:site_name" content="wzy&#39;s blog">
-<meta property="og:description" content="2018年12月4日标签：Java学习  Java中的权限修饰符用于修饰类中的成员变量或修饰类。123public class Cat&amp;#123;    private String name;&amp;#125;">
+<meta property="og:description" content="2018年12月19日标签：Java学习 接口">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543916002066&di=ec9ec28d648ddcd913bbe8d6d00a13f5&imgtype=0&src=http://pic002.cnblogs.com/images/2011/99057/2011101016262680.jpg">
-<meta property="og:updated_time" content="2018-12-17T09:49:01.207Z">
+<meta property="og:updated_time" content="2018-12-19T08:06:01.364Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java学习（1）">
-<meta name="twitter:description" content="2018年12月4日标签：Java学习  Java中的权限修饰符用于修饰类中的成员变量或修饰类。123public class Cat&amp;#123;    private String name;&amp;#125;">
-<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543916002066&di=ec9ec28d648ddcd913bbe8d6d00a13f5&imgtype=0&src=http://pic002.cnblogs.com/images/2011/99057/2011101016262680.jpg">
+<meta name="twitter:title" content="Java学习（5）">
+<meta name="twitter:description" content="2018年12月19日标签：Java学习 接口">
 
 
 
@@ -124,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/12/04/2018年12月4日/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/19/守家/">
 
 
 
 
 
-  <title>Java学习（1） | wzy's blog</title>
+  <title>Java学习（5） | wzy's blog</title>
   
 
 
@@ -289,7 +287,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/04/2018年12月4日/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/19/守家/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wzy">
@@ -306,7 +304,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Java学习（1）</h1>
+          <h1 class="post-title" itemprop="name headline">Java学习（5）</h1>
         
 
         <div class="post-meta">
@@ -318,8 +316,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-04T14:47:41+08:00">
-                2018-12-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-19T16:05:16+08:00">
+                2018-12-19
               </time>
             
 
@@ -337,8 +335,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/12/04/2018年12月4日/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/04/2018年12月4日/" itemprop="commentCount"></span>
+                <a href="/2018/12/19/守家/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/12/19/守家/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -370,14 +368,20 @@
       
 
       
-        <h5 id="2018年12月4日"><a href="#2018年12月4日" class="headerlink" title="2018年12月4日"></a>2018年12月4日</h5><p>标签：Java学习</p>
-<hr>
-<p>Java中的权限修饰符用于修饰类中的成员变量或修饰类。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Cat</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<a id="more"></a>
-<h2 id="private"><a href="#private" class="headerlink" title="private:"></a>private:</h2><p>修饰成员变量name，代表此成员变量只能在Cat这个类中进行访问，在子类中能被继承，但无法进行访问。<br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Cat</span></span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> Age;</span><br><span class="line">            String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="default"><a href="#default" class="headerlink" title="default:"></a>default:</h2><p>代表name这个成员变量，在类内部和同一个包下面的类中都可以进行访问。同时也用了default修饰了Cat这个类。<br><strong>在使用default修饰类或成员变量时不需在前面写出default</strong><br><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Cat</span></span>&#123;</span><br><span class="line">    <span class="keyword">protected</span> String name;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h2 id="protected"><a href="#protected" class="headerlink" title="protected:"></a>protected:</h2><p>修饰成员变量name，表示name可在类的内部访问，同一个包下面可以进行访问，同时在子类中也可以进行访问。</p>
-<h2 id="public："><a href="#public：" class="headerlink" title="public："></a>public：</h2><p>在任何地方，都可以进行访问。<img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1543916002066&amp;di=ec9ec28d648ddcd913bbe8d6d00a13f5&amp;imgtype=0&amp;src=http://pic002.cnblogs.com/images/2011/99057/2011101016262680.jpg" alt="此处输入图片的描述"></p>
+        <h5 id="2018年12月19日"><a href="#2018年12月19日" class="headerlink" title="2018年12月19日"></a>2018年12月19日</h5><p>标签：Java学习</p>
+<h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><a id="more"></a>
+<ol>
+<li>接口（interface）是抽象方法和常量值的定义集合。</li>
+<li>从本质上来说，接口是一种特殊的抽象类，这种抽象类中只包含常量和方法的定义，而没有变量和方法的实现。</li>
+<li>接口可以多重实现。</li>
+<li>接口中声明的属性默认为public static final的，也只能是 public static final的。</li>
+<li>接口中只能定义抽象方法，而且这些方法默认为public的，也只能是public的。</li>
+<li>接口可以继承其他的接口，并添加新的属性和抽象方法。</li>
+<li>多个无关的类可以实现同一个接口。</li>
+<li>一个类可以实现多个无关的接口。</li>
+<li>与继承关系类似，接口与实现类存在多态性。</li>
+<li>定义Java类的语法格式：<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt; modifier&gt; class &lt; name&gt; [extends &lt; superclass&gt;]</span><br><span class="line">[inplements &lt; interface&gt; [,&lt; interface&gt;]* ] &#123;</span><br><span class="line">&lt; declartions&gt;*&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
 
       
     </div>
@@ -402,8 +406,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/11/29/2018年11月29日/" rel="next" title="Java学习">
-                <i class="fa fa-chevron-left"></i> Java学习
+              <a href="/2018/12/18/2018年12月18/" rel="next" title="Java学习（4）">
+                <i class="fa fa-chevron-left"></i> Java学习（4）
               </a>
             
           </div>
@@ -411,10 +415,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/12/11/2018年12月11日/" rel="prev" title="Java学习（2）">
-                Java学习（2） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -563,7 +563,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#2018年12月4日"><span class="nav-number">1.</span> <span class="nav-text">2018年12月4日</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#private"><span class="nav-number"></span> <span class="nav-text">private:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#default"><span class="nav-number"></span> <span class="nav-text">default:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#protected"><span class="nav-number"></span> <span class="nav-text">protected:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#public："><span class="nav-number"></span> <span class="nav-text">public：</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#2018年12月19日"><span class="nav-number">1.</span> <span class="nav-text">2018年12月19日</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#接口"><span class="nav-number"></span> <span class="nav-text">接口</span></a></li></div>
             
 
           </div>
